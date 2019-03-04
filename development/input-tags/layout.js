@@ -48,6 +48,13 @@ export default class InputTags extends Component {
     }
 
     /**
+     * Set autofocus after component ready.
+     */
+    componentDidMount() {
+        this.inputtags.focus()
+    }
+
+    /**
      * When user type a text.
      */
     onInput(event) {
@@ -129,7 +136,9 @@ export default class InputTags extends Component {
         tags.splice(index)
 
         // update tags
-        this.props.onChange(tags)
+        this.props.onChange(tags, () => {
+            this.inputtags.focus()
+        })
     }
 
     /**

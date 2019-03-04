@@ -33,9 +33,13 @@ class App extends Component {
     /**
      * On change tags value.
      */
-    onChange(tags) {
+    onChange(tags, callback) {
         this.setState({
             tags: tags
+        }, () => {
+            if (callback) {
+                callback()
+            }
         })
     }
 
@@ -52,7 +56,7 @@ class App extends Component {
                         onChange={ this.onChange.bind(this) }
                     />
                     <footer className="footer">
-                        Fork me on <a href="https://github.com/fachririyanto/react-input-tags/">Github</a>. <a href="https://fachririyanto.com">Fachri Riyanto.</a>
+                        Fork me on <a href="https://github.com/fachririyanto/react-input-tags/">Github</a>. By <a href="https://fachririyanto.com">Fachri Riyanto.</a>
                     </footer>
                 </div>
             </section>
