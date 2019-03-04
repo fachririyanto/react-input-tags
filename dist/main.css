@@ -2,21 +2,24 @@ html, body {
   margin: 0;
   padding: 0;
   font-size: 10px;
-  background: #fff; }
+  background: #f85385; }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Merriweather', serif;
   font-size: 1.6rem;
   color: #333;
   line-height: 1.65; }
 
+button {
+  font-family: 'Merriweather', serif; }
+
 a {
-  color: #2196f3; }
+  color: #fff; }
 
 .module--container {
   display: block;
   position: relative;
-  padding: 80px 0; }
+  padding: 140px 0; }
 
 .container {
   display: block;
@@ -28,14 +31,15 @@ a {
 
 .footer {
   display: block;
-  margin-top: 32px;
-  color: #919191;
+  margin-top: 48px;
   text-align: center; }
+  .footer a {
+    color: #000; }
 
 .C--input-tags {
   display: block;
-  padding: 8px 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+  padding-bottom: 8px;
+  border-bottom: 1px solid #fe2a6b; }
   .C--input-tags .tags__list {
     display: initial; }
     .C--input-tags .tags__list .tag__item {
@@ -45,22 +49,26 @@ a {
       margin-bottom: 8px;
       padding: 6px 12px;
       font-size: 1.5rem;
-      border: 1px solid rgba(0, 0, 0, 0.1);
+      border: 1px solid #333;
       border-radius: 6px; }
       .C--input-tags .tags__list .tag__item .item__label {
         display: inline-block;
-        vertical-align: middle; }
+        vertical-align: middle;
+        line-height: 1; }
       .C--input-tags .tags__list .tag__item .item__button {
         display: inline-block;
         vertical-align: middle;
-        margin: 0 0 0 8px;
+        margin: 0 0 0 12px;
         padding: 0;
         font-size: 1.5rem;
-        color: red;
+        color: #333;
+        line-height: 1;
         border: 0;
         outline: 0;
         background: none;
         cursor: pointer; }
+        .C--input-tags .tags__list .tag__item .item__button:hover {
+          color: #000; }
   .C--input-tags .tags__input {
     display: inline-block;
     position: relative;
@@ -76,7 +84,7 @@ a {
       width: 100%;
       height: 100%;
       font-size: 1.5rem;
-      color: #c9c9c9;
+      color: #e41b58;
       line-height: 40px; }
     .C--input-tags .tags__input .input__editor {
       display: inline-block;
@@ -87,6 +95,7 @@ a {
       min-width: 100px;
       min-height: 40px;
       font-size: 1.5rem;
+      color: #333;
       line-height: 40px;
       border: 0;
       outline: 0; }

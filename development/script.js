@@ -26,7 +26,7 @@ class App extends Component {
              * List of tags.
              * @var {Array}
              */
-            tags: []
+            tags: ['ReactJS']
         }
     }
 
@@ -52,7 +52,7 @@ class App extends Component {
                         onChange={ this.onChange.bind(this) }
                     />
                     <footer className="footer">
-                        Fork me on <a href="https://github.com/fachririyanto/react-input-tags/">Github</a>.
+                        Fork me on <a href="https://github.com/fachririyanto/react-input-tags/">Github</a>. <a href="https://fachririyanto.com">Fachri Riyanto.</a>
                     </footer>
                 </div>
             </section>
@@ -61,7 +61,7 @@ class App extends Component {
 }
 
 /**
- * Render editor.
+ * Render app.
  */
 render(
     <App />,
