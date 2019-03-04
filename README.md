@@ -1,11 +1,14 @@
-# react-input-tags
+# React Input Tags
 Fun project: React input tags with contenteditable.
 
-## Run Example
+
+### Run Example
 To run the example is just download the repo and open index.html file.
 
-## Development
+
+### Development
 01. Run ```npm install```
 02. Run ```npm run dev```
 
+\
 Thank you.
