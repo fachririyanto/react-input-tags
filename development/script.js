@@ -45,15 +45,21 @@ class App extends Component {
      */
     render() {
         return (
-            <section className="module--container" id="App">
-                <div className="container">
-                    <InputTags
-                        value={ this.state.tags }
-                        onChange={ this.onChange.bind(this) }
-                    />
-                    <footer className="footer">
-                        Fork me on <a href="https://github.com/fachririyanto/react-input-tags/">Github</a>. <a href="https://fachririyanto.com">Fachri Riyanto.</a>
-                    </footer>
+            <section className="site fixed--layout" id="page">
+                <div className="table--layout -full-height">
+                    <div className="table__cell -vertical-align--middle">
+                        <section className="module--container" id="App">
+                            <div className="container">
+                                <InputTags
+                                    value={ this.state.tags }
+                                    onChange={ this.onChange.bind(this) }
+                                />
+                                <footer className="footer">
+                                    Fork me on <a href="https://github.com/fachririyanto/react-input-tags/">Github</a>. <a href="https://fachririyanto.com">Fachri Riyanto.</a>
+                                </footer>
+                            </div>
+                        </section>
+                    </div>
                 </div>
             </section>
         )
