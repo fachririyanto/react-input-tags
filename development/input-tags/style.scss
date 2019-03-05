@@ -1,7 +1,7 @@
 .C--input-tags {
     display: block;
     padding-bottom: 8px;
-    border-bottom: 1px solid #fe2a6b;
+    border-bottom: 1px solid #333;
     .tags__list {
         display: initial;
         .tag__item {
@@ -51,7 +51,7 @@
             width: 100%;
             height: 100%;
             font-size: 1.5rem;
-            color: #e41b58;
+            color: #c9c9c9;
             line-height: 40px;
         }
         .input__editor {
